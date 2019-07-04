@@ -1,7 +1,9 @@
-yn = ""
-while yn != "exit" and yn != "EXIT":
+num = 0
+while True:
     num = input("Enter a number:\n>>")
-    if float(num) % 2 == 0:
+    if str(num) == "exit" or str(num) == "EXIT":
+        break
+    elif float(num) % 2 == 0:
         print(num+" is EVEN")
     elif float(num) % 2 == 1:
         print(num+" is ODD")
@@ -9,4 +11,4 @@ while yn != "exit" and yn != "EXIT":
         print(num+" is ODD")
     else:
         print(num+" is not a valid number")
-    yn = input(">>")
+
